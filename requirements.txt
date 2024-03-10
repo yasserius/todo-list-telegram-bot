@@ -1,5 +1,4 @@
 pyTelegramBotAPI
 SQLAlchemy
-PyMySQL
-mysqlclient
-psycopg2
+psycopg2-binary
+python-dotenv

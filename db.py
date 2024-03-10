@@ -1,10 +1,12 @@
 from sqlalchemy import create_engine, text
 import os
+from dotenv import load_dotenv
 
+
+load_dotenv()
 
 def get_vercel_db_conn():
-    # todo: replace with os.getenv('DATABASE_URL')
-    return create_engine(os.get)
+    return create_engine(os.getenv('DATABASE_URI'))
 
 def create_payments_table():
     engine = get_vercel_db_conn()
